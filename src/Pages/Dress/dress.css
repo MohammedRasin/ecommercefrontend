@@ -1,0 +1,46 @@
+/* src/pages/dressCategory.css */
+.dress-category-page {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.category-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.dress-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.dress-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.dress-card:hover {
+  transform: scale(1.05);
+}
+
+.dress-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.dress-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  padding: 10px;
+}

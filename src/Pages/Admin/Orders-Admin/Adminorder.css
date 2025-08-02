@@ -1,0 +1,197 @@
+/* Admin Order Listing Styles */
+.admin-order-listing-container {
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.admin-order-listing-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.admin-no-orders {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #888;
+}
+
+.admin-order-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.admin-order-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-order-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.admin-order-card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.admin-order-id {
+  font-weight: bold;
+  color: #333;
+}
+
+.admin-order-date {
+  color: #888;
+}
+
+.admin-order-card-body {
+  display: flex;
+  gap: 20px;
+}
+
+.admin-product-image-container {
+  width: 120px;
+  height: 120px;
+}
+
+.admin-product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.admin-order-details {
+  flex: 1;
+}
+
+.admin-order-details h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.admin-order-details p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.admin-payment-method {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.admin-status {
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.admin-status.shipped {
+  background-color: #28a745;
+  color: white;
+}
+
+.admin-status.pending {
+  background-color: #ffc107;
+  color: white;
+}
+
+.admin-order-card-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.admin-view-details,
+.admin-delete-order {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.admin-view-details {
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.admin-view-details:hover {
+  background-color: #0056b3;
+}
+
+.admin-delete-order {
+  background-color: #e60000;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.admin-delete-order:hover {
+  background-color: #cc0000;
+}
+.admin-order-card-body p {
+  font-size: 1rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+.admin-status {
+  font-weight: bold;
+}
+
+.admin-status.shipped {
+  color: green;
+}
+
+.admin-status.pending {
+  color: red;
+}
+
+.admin-order-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-view-details,
+.admin-delete-order {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.admin-view-details {
+  background-color: #4caf50;
+  color: white;
+}
+
+.admin-view-details:hover {
+  background-color: #45a049;
+}
+
+.admin-delete-order {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.admin-delete-order:hover {
+  background-color: #e60000;
+}
+
+.admin-order-id {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.admin-order-date {
+  color: #777;
+}

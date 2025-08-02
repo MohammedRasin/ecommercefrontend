@@ -1,0 +1,80 @@
+/* General styling for the product list container */
+.containerlist {
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button container */
+  .btn-Container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+  }
+  
+  /* Style for the Add Product button */
+  .btn-Container button {
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-Container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Table styling */
+  .ant-table {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table header */
+  .ant-table-thead > tr > th {
+    background: #1890ff !important;
+    color: white !important;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  /* Table rows */
+  .ant-table-tbody > tr > td {
+    text-align: center;
+    font-size: 14px;
+    padding: 12px;
+  }
+  
+  /* Image in the table */
+  .tableimage {
+    transition: transform 0.3s ease;
+    border: 2px solid #ddd;
+  }
+  
+  .tableimage:hover {
+    transform: scale(1.2);
+    border-color: #1890ff;
+  }
+  
+  /* Action buttons */
+  .ant-btn-danger {
+    background: #ff4d4f;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .ant-btn-danger:hover {
+    background: #d9363e;
+    transform: scale(1.05);
+  }
+  

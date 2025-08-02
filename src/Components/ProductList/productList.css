@@ -1,0 +1,194 @@
+/* Product Category Page Styling */
+.product-category-page {
+  padding: 40px;
+  background-color: #fafafa;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Category Title */
+.category-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+/* Product Grid Layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 products per row */
+  gap: 30px;
+  justify-items: center;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+/* Product Card */
+.product-card {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Image */
+.product-image {
+  object-fit: cover;
+  height: 250px; /* Ensures uniform image height */
+  width: 100%;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Card Body */
+.product-card .ant-card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Product Name */
+.product-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+/* Product Price */
+.product-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #e74c3c;
+  margin-bottom: 15px;
+}
+
+/* Product Actions */
+.product-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Buttons */
+.product-actions .ant-btn {
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
+.product-actions .ant-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Primary Button */
+.ant-btn-primary {
+  background-color: #3498db;
+  border-color: #3498db;
+}
+
+.ant-btn-primary:hover {
+  background-color: #2980b9;
+  border-color: #2980b9;
+}
+
+/* Dashed Button */
+.ant-btn-dashed {
+  background-color: #f39c12;
+  border-color: #f39c12;
+}
+
+.ant-btn-dashed:hover {
+  background-color: #e67e22;
+  border-color: #e67e22;
+}
+
+/* Like Button */
+.ant-btn-link {
+  font-size: 1.1rem;
+  color: #2ecc71;
+}
+
+.ant-btn-link:hover {
+  color: #27ae60;
+}
+
+/* No Products Message */
+.no-products {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #7f8c8d;
+  font-weight: 500;
+}
+
+/* Size Selection */
+.product-sizes {
+  margin-top: 10px;
+}
+
+.size-buttons {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+/* Size Button */
+.size-button {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  padding: 0;
+  transition: all 0.3s ease;
+  border: 1px solid #ccc;
+}
+
+.size-button:hover,
+.size-button:focus {
+  transform: scale(1.1);
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}

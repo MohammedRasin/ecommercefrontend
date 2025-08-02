@@ -1,0 +1,93 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c4875;
+  padding: 10px 20px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar .logo .highlight {
+  color: #f39c12;
+}
+
+.navbar nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar nav ul li {
+  font-size: 16px;
+}
+
+.navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+  background-color: #f39c12;
+}
+
+.navbar .icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar .icons .icon {
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  padding: 5px;
+  transition: color 0.3s;
+}
+
+.navbar .icons .icon:hover {
+  color: #f39c12;
+}
+
+/* Cart Icon */
+.cart-icon {
+  font-size: 20px;
+  position: relative;
+}
+
+.cart-icon::after {
+  content: '0'; /* Replace with cart item count dynamically */
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Profile Dropdown */
+.ant-dropdown-menu-item {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+.ant-dropdown-menu-item:hover {
+  background-color: #f39c12;
+  color: white;
+}

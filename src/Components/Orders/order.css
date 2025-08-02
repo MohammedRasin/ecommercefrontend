@@ -1,0 +1,148 @@
+/* General Styles */
+.order-listing-container {
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.order-listing-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.order-list-table {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ant-table-thead > tr > th {
+  background-color: #f0f2f5;
+  color: #333;
+  font-weight: 600;
+}
+
+.ant-table-tbody > tr > td {
+  font-size: 1rem;
+  color: #555;
+}
+
+.order-id {
+  color: #1890ff;
+  font-weight: 600;
+}
+
+.product-image {
+  width: 50px; /* Adjust the width as needed */
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.ant-tag {
+  font-size: 0.9rem;
+}
+
+.ant-btn-link {
+  color: #1890ff;
+  font-weight: 600;
+}
+
+.ant-btn-link:hover {
+  color: #40a9ff;
+}
+
+.ant-btn-danger {
+  color: #f5222d;
+  font-weight: 600;
+}
+
+.ant-btn-danger:hover {
+  color: #ff4d4f;
+}
+
+/* Responsiveness */
+
+/* For Tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .order-listing-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px; /* Reduce margin for small screens */
+  }
+
+  .order-list-table {
+    font-size: 0.9rem;
+    padding: 10px; /* Add padding for better space on small screens */
+  }
+
+  .ant-table-thead > tr > th {
+    padding: 12px 10px; /* Reduce padding for table header */
+  }
+
+  .ant-table-tbody > tr > td {
+    padding: 12px 10px; /* Adjust cell padding */
+  }
+
+  .product-image {
+    width: 40px;
+    height: 40px; /* Reduce image size for smaller screens */
+  }
+
+  .order-id {
+    font-size: 0.9rem; /* Make order ID smaller */
+  }
+
+  .ant-btn-link,
+  .ant-btn-danger {
+    font-size: 0.9rem; /* Make buttons smaller */
+  }
+}
+
+/* For Small Screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .order-listing-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .order-list-table {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .ant-table-thead > tr > th {
+    padding: 10px 8px;
+  }
+
+  .ant-table-tbody > tr > td {
+    padding: 10px 8px;
+  }
+
+  .product-image {
+    width: 35px;
+    height: 35px; /* Further reduce image size */
+  }
+
+  .order-id {
+    font-size: 0.8rem; /* Make order ID even smaller */
+  }
+
+  .ant-btn-link,
+  .ant-btn-danger {
+    font-size: 0.8rem; /* Make buttons smaller */
+  }
+
+  /* Stack the buttons vertically on small screens */
+  .ant-btn-link,
+  .ant-btn-danger {
+    display: block;
+    margin: 5px 0; /* Add margin between buttons */
+  }
+
+  /* Adjust table layout for better fit */
+  .order-list-table {
+    overflow-x: auto;
+  }
+}

@@ -1,0 +1,56 @@
+.userLogin-container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #e3f2fd, #bbdefb);
+}
+
+.userLogin-wrapper {
+  display: flex;
+  width: 800px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.userLogin-image {
+  flex: 1;
+  background: url('/public/WhatsApp Image 2025-01-21 at 17.45.59_77348d1f.jpg')
+    no-repeat center center/cover;
+}
+
+.userLogin-card {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+.userLogin-form-item {
+  text-align: left;
+}
+/* .userLogin-form {
+  margin-top: 10px;
+} */
+
+.userLogin-input {
+  border-radius: 5px;
+}
+
+.userLogin-button {
+  background-color: #00bd6b !important;
+  border-color: #00c771 !important;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.userLogin-button:hover {
+  background-color: #1e3559 !important;
+}
+
+.userLogin-signup {
+  text-align: center;
+  margin-top: 10px;
+}
